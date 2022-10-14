@@ -121,7 +121,7 @@ export const projectsData = [
     image: 'https://res.cloudinary.com/esteban3232/image/upload/v1665173976/eventApp/Captura_de_Pantalla_2022-10-06_a_la_s_12.06.06_a._m._aiks54.png',
     name: 'Events App',
     category: 'web development',
-    url:'https://github.com/jestebanvelasquez/ArtisUp',
+    url:'https://events-app-eta.vercel.app/artist/home',
     description:'La idea general es desarrollar una app que permita conectar a un usuario con un show artistico, donde el usuario podrá crear una cuenta y loggearse para contratar los servicios de diferentes shows artisticos de la ciudad, implementando un sistema de pago. Ademas el artista podrá al igual registrarse y crear los eventos que ofrecera en la app, se contará con un panel de administracion que servira para darle el manejo a decuado y seguimiento a la ejecucion de la app'
   },
   {
