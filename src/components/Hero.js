@@ -24,7 +24,7 @@ const Hero = () => {
 
             </p>
             <a href='https://www.linkedin.com/in/esteban-velasquez-martinez/' target={'_blank'} className='btn btn-md bg-amber-400 hover:bg-amber-500 md:btn-lg transition-all'>
-              Trabajar Conmigo
+              Ver Linkedin
             </a>
           </div>
           <div className='hidden lg:flex flex-1 justify-end items-end h-full'>
