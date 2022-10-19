@@ -24,7 +24,7 @@ const Nav = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='transition-all duration-300'
+                className='transition-all text-amber-400 duration-300'
               >
                 {item.name}
               </Link>

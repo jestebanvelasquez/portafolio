@@ -12,8 +12,7 @@ const Portfolio = () => {
             Mis Proyectos
           </h2>
           <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
+            Proyectos realizados de manera autonoma
           </p>
         </div>
         <Projects />

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
 // import contact data
@@ -20,11 +21,18 @@ const Contact = () => {
           })
     }
 
-    console.log(email);
-
-    const handleSubmit = (e) =>{
+    // console.log(email);
+  
+    const handleSubmit = async (e) =>{
         e.preventDefault()
-        console.log(email);
+        if(email.name && email.email && email.message && email.subject){
+          const data = await axios('https://events-app-eta.vercel.app/user/email',{
+            method:'POST',
+            data: email,
+            headers: { Authorization :`Bearer ${process.env.AUTH}`}      
+          })
+          console.log(data);
+        }
     }
 
 
@@ -50,18 +58,19 @@ const Contact = () => {
               const { icon, title, subtitle, description } = item;
               return (
                 <div className='flex flex-col lg:flex-row gap-x-4' key={index}>
-                  <div className='text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
+                  <div className='text-amber-400 rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
                     {icon}
                   </div>
                   <div>
                     <h4 className='font-body text-xl mb-1'>{title}</h4>
                     <p className='mb-1 text-paragraph'>{subtitle}</p>
-                    <p className='text-accent font-normal '>{description}</p>
+                    <p className='text-amber-400 font-normal '>{description}</p>
                   </div>
                 </div>
               );
             })}
           </div>
+          <br />
           <form
             className='space-y-8 w-full max-w-[780px]'
           >
@@ -76,7 +85,7 @@ const Contact = () => {
               className='textarea'
               placeholder='Tú mensaje'
             ></textarea>
-            <button onChange={(e)=> handleSubmit(e)} className='btn btn-lg bg-accent hover:bg-secondary-hover'>
+            <button onClick={(e)=> handleSubmit(e)} className='btn btn-lg bg-accent hover:bg-secondary-hover'>
               enviar  mensage
             </button>
           </form>

@@ -64,10 +64,10 @@ export const navigation = [
   //   name: 'testimonials',
   //   href: 'testimonials',
   // },
-  {
-    name: 'contact',
-    href: 'contact',
-  },
+  // {
+  //   name: 'contact',
+  //   href: 'contact',
+  // },
 ];
 
 // social
@@ -122,7 +122,7 @@ export const projectsData = [
     name: 'Events App',
     category: 'web development',
     url:'https://events-app-eta.vercel.app/artist/home',
-    description:'La idea general es desarrollar una app que permita conectar a un usuario con un show artistico, donde el usuario podrá crear una cuenta y loggearse para contratar los servicios de diferentes shows artisticos de la ciudad, implementando un sistema de pago. Ademas el artista podrá al igual registrarse y crear los eventos que ofrecera en la app, se contará con un panel de administracion que servira para darle el manejo a decuado y seguimiento a la ejecucion de la app'
+    description:'se  desarrollo una app que permite conectar a un usuario con un show artistico, donde el usuario podrá crear una cuenta y loggearse para contratar los servicios de diferentes shows artisticos de la ciudad, implementando un sistema de pago. Ademas el artista podrá al igual registrarse y crear los eventos que ofrecera en la app, se contará con un panel de administracion que servira para darle el manejo a decuado y seguimiento a la ejecucion de la app'
   },
   {
     id: '2',
@@ -131,7 +131,7 @@ export const projectsData = [
     category: 'web development',
     url:'https://medic-app-pf.vercel.app/',
     description:`Se desarrollo una app que permite conectar pacientes con medicos de la zona, donde el paciente puede conocer la agenda del medico, reservar una cita, pagar y generar un recibo con el cual se le notificará al medico elegido.
-    La app cuenta con panel de paciente, medico y admin, donde podran modificar sus perfiles y ver la actividad en la pagina. Tambien cuenta con un panel administrativo, en el cual se puede verificar la actividad de casa usuario, medico y nuevos administradores. Segun su actividad y comportamiento se podrá banear a cualquier usuario, restringiendo su acceso a la app. al igual llevar a cabo la administracion de la pagina, sus servicios generados, pagados y toda su actividad financiera.`
+    La app cuenta con panel de paciente, medico y admin, donde podran modificar sus perfiles y ver la actividad en la pagina. `
   },
   {
     id: '3',

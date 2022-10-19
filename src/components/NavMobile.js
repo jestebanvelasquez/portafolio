@@ -57,7 +57,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial='hidden'
         animate={isOpen ? 'visible' : 'hidden'}
-        className='w-4 h-4 rounded-full bg-amber-400 fixed top-0 right-0'
+        className='w-4 h-4 rounded-full bg-zinc-600 fixed top-0 right-0'
       ></motion.div>
 
       <motion.ul
@@ -82,7 +82,7 @@ const NavMobile = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='text-xl cursor-pointer capitalize'
+                className='text-xl cursor-pointer text-amber-400 capitalize'
               >
                 {item.name}
               </Link>
