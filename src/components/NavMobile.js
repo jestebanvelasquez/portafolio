@@ -57,7 +57,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial='hidden'
         animate={isOpen ? 'visible' : 'hidden'}
-        className='w-4 h-4 rounded-full bg-zinc-600 fixed top-0 right-0'
+        className='w-4 h-4 rounded-full bg-zinc-600 bg-opacity-80 fixed top-0 right-0'
       ></motion.div>
 
       <motion.ul
@@ -65,7 +65,7 @@ const NavMobile = () => {
         initial='hidden'
         animate={isOpen ? 'visible' : ''}
         className={`${
-          isOpen ? 'right-0' : '-right-full'
+          isOpen ? 'right-0' : '-right-full '
         } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
       >
         <div

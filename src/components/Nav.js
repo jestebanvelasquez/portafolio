@@ -8,8 +8,8 @@ import { Link } from 'react-scroll';
 
 const Nav = () => {
   return (
-    <nav>
-      <ul className='flex space-x-8 capitalize text-[15px]'>
+    <nav className=''>
+      <ul className='flex space-x-8  capitalize text-[15px]'>
         {navigation.map((item, idx) => {
           return (
             <li

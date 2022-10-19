@@ -6,10 +6,10 @@ const Image = 'https://res.cloudinary.com/esteban3232/image/upload/v1666146667/e
 
 const About = () => {
   return (
-    <section className='section bg-secondary' id='about'>
+    <section className='section bg-secondary ' id='about'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-24'>
-        <div  className='bg-green-500 w-full h-full rounded-3xl hover:scale-110 duration-300'>
+        <div  className=' shadow-lg shadow-zinc-800 w-full h-full rounded-3xl hover:scale-110 duration-300'>
 
           <img
             className='object-cover h-5/6 w-[500px]  md:mx-auto lg:mx-0 rounded-2xl'
@@ -32,9 +32,14 @@ const About = () => {
                 
               </p>
             </div>
-            <Link to='contact' className='btn btn-md bg-amber-400 hover:bg-amber-500 transition-all'>
+            <div className=' items-center justify-center'>
+              <h2 className='text-'>Contactame:</h2>
+              <p className=''>Correo: jestebanvelasquez22@gmail.com</p> 
+                
+            </div>
+            {/* <Link to='contact' className='btn btn-md bg-amber-400 hover:bg-amber-500 transition-all'>
               Contact me
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
