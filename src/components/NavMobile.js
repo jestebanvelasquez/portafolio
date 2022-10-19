@@ -76,13 +76,13 @@ const NavMobile = () => {
         </div>
         {navigation.map((item, idx) => {
           return (
-            <li key={idx} className='mb-8'>
+            <li key={idx} className='flex flex-col justify-center items-center rounded-xl bg-black bg-opacity-80 mb-8 text-center  h-10 w-40 '>
               <Link
                 to={item.href}
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='text-xl cursor-pointer text-amber-400 capitalize'
+                className='text-xl cursor-pointer   text-zinc-100 capitalize'
               >
                 {item.name}
               </Link>
