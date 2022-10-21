@@ -7,7 +7,7 @@ const Project = ({ item }) => {
       <div className=' h-fit  '>
         <a href={item.url} target={'_blank'} >
 
-          <img className='rounded-2xl h-80 cursor-pointer ' src={item.image} alt='' />
+          <img className='rounded-2xl h-80 cursor-pointer object-contain ' src={item.image} alt='' />
         </a>
       </div>
       <p className='capitalize text-amber-500 text-sm mb-3'>{item.category}</p>
