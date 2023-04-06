@@ -37,9 +37,6 @@ const About = () => {
               <p className=''>Correo: jestebanvelasquez22@gmail.com</p> 
                 
             </div>
-            {/* <Link to='contact' className='btn btn-md bg-amber-400 hover:bg-amber-500 transition-all'>
-              Contact me
-            </Link> */}
           </div>
         </div>
       </div>

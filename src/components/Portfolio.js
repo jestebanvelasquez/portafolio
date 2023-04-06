@@ -15,7 +15,10 @@ const Portfolio = () => {
             Proyectos realizados de manera autonoma
           </p>
         </div>
-        <Projects />
+        <div className='m-5'>
+
+          <Projects />
+        </div>
       </div>
     </section>
   );
